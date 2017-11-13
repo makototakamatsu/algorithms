@@ -1,0 +1,25 @@
+
+# coding: utf-8
+
+# In[1]:
+
+#バブルソート
+def bubble_sort(array):
+    n=len(array)
+    for i in range(n-1):
+        for j in range(n-1, i, -1):
+            if array[j] < array[j-1]:
+                tmp=array[j]
+                array[j]=array[j-1]
+                array[j-1]=tmp
+                
+#デバック
+if __name__=="__main__":
+    array=[7,22,5,11,32,120,68,70]
+    print("before",array)
+    bubble_sort(array)
+    print("after",array)
+
+
+
+
