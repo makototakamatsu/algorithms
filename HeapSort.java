@@ -19,6 +19,10 @@ int cr=cl+1;//左の子供
 
 //もし条件節にあっていればcrに代入,条件節にあっていなければclに代入
 //条件節と代入が合わさってる
+//三項演算子//<条件式>?<真式>:<偽式>;//
+//条件式child = (cr<= right && a[cr]>a[cl])
+//真式cr
+//偽式cl
 child = (cr<= right && a[cr]>a[cl]) ? cr:cl;
 if(temp >= a[child])
 break;
